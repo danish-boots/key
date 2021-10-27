@@ -89,7 +89,7 @@ let glimit = JSON.parse(fs.readFileSync('./database/glimit.json'));
 global.hit = {}
 
 //Gambar Url
-const bgbot = 'https://i.ibb.co/Rpdfnwh/images-q-tbn-ANd9-Gc-Tmn-q-Sq-E0m-Fr-QUEpar-Wd-L-GK5u-Rb-M9661-Xw-usqp-CAU.jpg'
+const bgbot = 'https://i.ibb.co/X8f9tmB/102eb9ca1fea76f53d3973360654d21a.jpg'
 
 
 // Game
@@ -611,7 +611,7 @@ module.exports = async(xinz, msg, smsg, blocked, _afk, welcome) => {
                     try {
                         var pic = await xinz.getProfilePicture(sender)
                     } catch {
-                        var pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
+                        var pic = 'https://i.ibb.co/X8f9tmB/102eb9ca1fea76f53d3973360654d21a.jpg'
                     }
                     const jumlahCommand = require('util').inspect(hit.all)
                     const jumlahHarian = require('util').inspect(hit.today)
@@ -1439,7 +1439,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 *Data Berhasil Didapatkan!*
 \`\`\`▢ Title : ${title}\`\`\`
 \`\`\`▢ Ext : MP4\`\`\`
-\`\`\`▢ Filesize : ${filesizeF}\`\`\`
+\`\\`\`▢ Filesize : ${filesizeF}\`\`\`
 \`\`\`▢ Link : ${a.data}\`\`\`
 _Untuk durasi lebih dari batas disajikan dalam bentuk link_`, msg)
                         const captionsYtmp4 = `┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
@@ -4029,7 +4029,7 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
                     },
                     "type": "RESPONSE"
                 }]
-                xinz.sendButtonsLoc(from, `Hai @${sender.split('@')[0]}\n\n${res.videos[0].title}\n\n${res.videos[0].description}`, `video or audio?`, qqppp, await getBuffer('https://img.youtube.com/vi/' + res.videos[0].videoId + '/sddefault.jpg'), [sender])
+                xinz.sendButtonsLoc(from, `Hai @${sender.split('@')[0]}\n\n${res.videos[0].title}\n\n${res.videos[0].description}`, `By ElainaBot`, qqppp, await getBuffer('https://img.youtube.com/vi/' + res.videos[0].videoId + '/sddefault.jpg'), [sender])
                     limitAdd(sender, limit)
                 })
                     .catch((err) => reply(`${err}`))
